@@ -43,4 +43,18 @@ To do so it's necessary to start the container, grab the file content and store 
 
     docker stop worldpress
 
+## Adding the new config file to the image
+Once every file is ready to be placed in the container, build the Dockerfile in charge of copying the configurations files inside the image
 
+    docker build .
+
+## Uploading the custom image
+Now that the image is ready, unless it soppose to be used on the same machine it was build, upload it to an image registry.
+
+1. Login to the image registry
+
+    docker login <registry>
+
+2. Upload the image
+
+    docker push <username>/jenkins:<tagname>
