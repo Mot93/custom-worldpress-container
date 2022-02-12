@@ -58,3 +58,14 @@ Now that the image is ready, unless it soppose to be used on the same machine it
 2. Upload the image
 
     docker push <username>/jenkins:<tagname>
+
+License
+-------
+
+MIT
+
+Author Information
+------------------
+
+If you like my work and want to know more, visit my website:
+[www.mattiarubini.com](https://www.mattiarubini.com)    
